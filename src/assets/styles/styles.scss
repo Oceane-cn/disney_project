@@ -3,6 +3,8 @@
 
 //Variables
 @import "var/font.scss";
+@import "var/colors.scss";
+@import "var/mixins.scss";
 
 //Blocks
 @import "block/menu.scss";
@@ -10,3 +12,4 @@
 @import "block/books.scss";
 @import "block/description.scss";
 @import "block/pictures.scss";
+@import "block/footer.scss";

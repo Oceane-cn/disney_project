@@ -1,8 +1,6 @@
 .menu {
   height: 20vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex_center;
 
   a {
     text-decoration: none;

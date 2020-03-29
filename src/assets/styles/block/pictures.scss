@@ -1,3 +1,18 @@
 .pictures {
   background: green;
+  @include flex_center;
+  flex-wrap: wrap;
+  position: relative;
+
+  img {
+    width: 50%;
+  }
+}
+
+.pictures__link {
+  position: absolute;
+  padding: 5%;
+  background: var(--white);
+  opacity: 0.7;
+  color: black;
 }
