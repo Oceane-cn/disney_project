@@ -1,6 +1,12 @@
-@import "/assets/styles/global/reset.scss";
-@import "/assets/styles/global/global.scss";
+@import "global/reset.scss";
+@import "global/global.scss";
 
-@import "/assets/styles/block/available.scss";
-@import "/assets/styles/block/coming.scss";
-@import "/assets/styles/block/stores.scss";
+//Variables
+@import "var/font.scss";
+
+//Blocks
+@import "block/menu.scss";
+@import "block/homePicture.scss";
+@import "block/books.scss";
+@import "block/description.scss";
+@import "block/pictures.scss";

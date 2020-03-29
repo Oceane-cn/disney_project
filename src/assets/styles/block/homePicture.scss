@@ -1,0 +1,19 @@
+.homePicture {
+  height: 80vh;
+  background: pink;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 30px;
+  font-size: 1.5rem;
+  color: black;
+  padding: 5%;
+  background: url("../../assets/img/disney_books_1.PNG");
+}
+
+.homePicture__title {
+  background: white;
+  opacity: 0.7;
+  padding: 15% 5%;
+}

@@ -4,12 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve": "parcel index.html",
+    "serve": "parcel src/index.html",
     "build": "parcel build src/index.html"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "parcel": "^1.12.4"
+  },
+  "devDependencies": {
+    "sass": "^1.26.3"
   }
 }
