@@ -1,6 +1,16 @@
 .description {
-  background: rgb(112, 41, 41);
   text-align: center;
-  padding: 5%;
+  padding: 10% 5%;
   line-height: 20px;
+}
+.description__title {
+  font-size: 2rem;
+  font-family: var(--title_font);
+  padding-bottom: 5%;
+}
+.description__text {
+  font-size: 0.9rem;
+}
+.description__citation {
+  margin-bottom: 5%;
 }

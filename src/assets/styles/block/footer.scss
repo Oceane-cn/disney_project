@@ -1,7 +1,22 @@
 footer {
   text-align: center;
+  background: var(--footer);
+  color: var(--white);
+  padding: 10% 0%;
+
+  > p {
+    margin-top: 10%;
+  }
 }
 .footer {
   display: flex;
   justify-content: space-evenly;
+}
+.footer__title {
+  font-family: var(--title_font);
+  font-size: 1.5rem;
+}
+.footer__info {
+  color: var(--white);
+  font-size: 0.8rem;
 }

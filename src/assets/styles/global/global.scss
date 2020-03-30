@@ -5,10 +5,18 @@
 img {
   max-width: 100%;
 }
-section {
-  //height: 100vh;
-  margin-bottom: 10%;
+body {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z2AiBwAEjAFTqUuQIwAAAABJRU5ErkJggg==");
 }
 a {
   text-decoration: none;
+}
+p,
+h1,
+h3,
+a {
+  font-family: var(--p_font);
+}
+hr {
+  width: 20%;
 }

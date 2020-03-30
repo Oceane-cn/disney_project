@@ -1,6 +1,5 @@
 .homePicture {
   height: 80vh;
-  background: pink;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -16,4 +15,5 @@
   background: var(--white);
   opacity: 0.7;
   padding: 15% 5%;
+  font-size: 1rem;
 }

@@ -1,6 +1,6 @@
 .pictures {
-  background: green;
   @include flex_center;
+
   flex-wrap: wrap;
   position: relative;
 
@@ -15,4 +15,5 @@
   background: var(--white);
   opacity: 0.7;
   color: black;
+  border: 1px gray solid;
 }

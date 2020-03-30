@@ -1,8 +1,13 @@
-.books {
-  background: blue;
+.books__container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+.books__title {
+  font-family: var(--title_font);
+  font-size: 2rem;
+  text-align: center;
+  padding: 10% 0%;
 }
 .books__book {
   width: 33%;
