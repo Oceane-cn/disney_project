@@ -1,12 +1,11 @@
 * {
   box-sizing: border-box;
 }
-
+body {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/2i7HAAIOAK406oLtAAAAABJRU5ErkJggg==");
+}
 img {
   max-width: 100%;
-}
-body {
-  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z2AiBwAEjAFTqUuQIwAAAABJRU5ErkJggg==");
 }
 a {
   text-decoration: none;
