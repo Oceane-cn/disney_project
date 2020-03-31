@@ -7,11 +7,25 @@
   font-size: 2rem;
   font-family: var(--title_font);
   padding-bottom: 5%;
+
+  @include tablet {
+    font-size: 3rem;
+  }
 }
 .description__text {
   font-size: 0.9rem;
+
+  @include tablet {
+    font-size: 1rem;
+  }
 }
 .description__citation {
   margin-bottom: 5%;
   animation: fadeIn 1.5s forwards;
+  min-height: 60px;
+
+  @include tablet {
+    font-size: 1.2rem;
+    min-height: 50px;
+  }
 }

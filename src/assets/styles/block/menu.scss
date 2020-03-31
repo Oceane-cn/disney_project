@@ -1,6 +1,7 @@
 .menu {
   height: 20vh;
   @include flex_center;
+  text-align: center;
 
   a {
     text-decoration: none;
@@ -10,5 +11,10 @@
     border: gray thick double;
     padding: 5%;
     background: var(--white);
+
+    @include tablet {
+      padding: 5% 10%;
+      font-size: 3rem;
+    }
   }
 }

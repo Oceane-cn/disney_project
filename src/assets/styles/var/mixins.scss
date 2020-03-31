@@ -3,3 +3,18 @@
   justify-content: center;
   align-items: center;
 }
+
+$tablet-width: 767px;
+$desktop-width: 1025px;
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
