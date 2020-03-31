@@ -1,0 +1,6 @@
+.container {
+  @include desktop {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

@@ -2,6 +2,14 @@
   text-align: center;
   padding: 10% 5%;
   line-height: 20px;
+
+  @include desktop {
+    grid-column: 1 / 3;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .description__title {
   font-size: 2rem;

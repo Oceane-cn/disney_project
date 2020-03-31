@@ -6,6 +6,14 @@ footer {
 
   > p {
     margin-top: 10%;
+
+    @include desktop {
+      margin-top: 2%;
+    }
+  }
+
+  @include desktop {
+    padding: 5% 0%;
   }
 }
 .footer {

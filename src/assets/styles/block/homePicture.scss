@@ -1,5 +1,5 @@
 .homePicture {
-  height: 55vh;
+  min-height: 55vh;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -9,7 +9,14 @@
   color: black;
   padding: 5%;
   background: url("../../assets/img/disney_books_1.PNG");
-  background-size: 100% 100%;
+  background-size: 100%;
+
+  @include desktop {
+    min-height: 75vh;
+    background: url("../../assets/img/disney_books_1.1.PNG");
+    background-size: 100%;
+    align-items: center;
+  }
 }
 
 .homePicture__title {
@@ -17,9 +24,18 @@
   opacity: 0.7;
   padding: 15% 5%;
   font-size: 1rem;
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
 
   @include tablet {
     font-size: 2rem;
     line-height: 40px;
+  }
+
+  @include desktop {
+    width: 50%;
+    font-size: 1.5rem;
+    padding: 10% 0;
   }
 }

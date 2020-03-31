@@ -2,6 +2,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  @include desktop {
+    min-height: 70vh;
+    align-items: center;
+    background: var(--white);
+  }
 }
 .books__title {
   font-family: var(--title_font);
@@ -12,10 +18,19 @@
   @include tablet {
     font-size: 3rem;
   }
+
+  @include desktop {
+    padding: 3% 0%;
+  }
 }
 .books__book {
   width: 33%;
   position: relative;
+  cursor: pointer;
+
+  @include desktop {
+    width: 10%;
+  }
 }
 .book__more {
   position: absolute;

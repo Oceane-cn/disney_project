@@ -9,12 +9,20 @@
     font-family: var(--title_font);
     font-size: 2rem;
     border: gray thick double;
-    padding: 5%;
+    padding: 3vh 10vw;
     background: var(--white);
 
     @include tablet {
-      padding: 5% 10%;
       font-size: 3rem;
     }
+
+    @include desktop {
+      font-size: 1.5rem;
+      padding: 1vh 3vw;
+    }
+  }
+
+  @include desktop {
+    height: 10vh;
   }
 }
