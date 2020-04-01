@@ -9,6 +9,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    border: 10px double gray;
   }
 }
 .description__title {
@@ -22,6 +23,7 @@
 }
 .description__text {
   font-size: 0.9rem;
+  line-height: 25px;
 
   @include tablet {
     font-size: 1rem;
@@ -29,6 +31,7 @@
 }
 .description__citation {
   margin-bottom: 5%;
+  margin-top: 5%;
   animation: fadeIn 1.5s forwards;
   min-height: 60px;
 
