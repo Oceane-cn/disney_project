@@ -25,4 +25,8 @@
     padding: 4%;
     font-size: 1.5rem;
   }
+
+  @include desktop {
+    padding: 3%;
+  }
 }

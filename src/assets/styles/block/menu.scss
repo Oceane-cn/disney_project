@@ -1,16 +1,20 @@
 .menu {
-  height: 20vh;
+  height: 60vh;
   @include flex_center;
   text-align: center;
+  background: url("../../assets/img/cover_1.jpg");
+  background-size: 100%;
 
   a {
     text-decoration: none;
     color: black;
     font-family: var(--title_font);
     font-size: 2rem;
-    border: gray thick double;
+    border: rgb(231, 61, 61) thick double;
     padding: 3vh 10vw;
     background: var(--white);
+    opacity: 0.8;
+    display: none;
 
     @include tablet {
       font-size: 3rem;
@@ -23,6 +27,8 @@
   }
 
   @include desktop {
-    height: 10vh;
+    //height: 10vh;
+    min-height: 80vh;
+    background-size: 100%;
   }
 }

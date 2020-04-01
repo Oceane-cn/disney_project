@@ -8,22 +8,35 @@
   font-size: 1.5rem;
   color: black;
   padding: 5%;
-  background: url("../../assets/img/disney_books_1.PNG");
+  background: url("../../assets/img/cover_2.jpg");
   background-size: 100%;
 
   @include desktop {
-    min-height: 75vh;
-    background: url("../../assets/img/disney_books_1.1.PNG");
-    background-size: 100%;
+    min-height: 100vh;
     align-items: center;
   }
 }
 
+.homePicture__disney {
+  margin-bottom: 10%;
+  font-size: 4rem;
+  font-family: "Stalemate", cursive;
+
+  @include tablet {
+    font-size: 7rem;
+  }
+
+  @include desktop {
+    font-size: 7rem;
+  }
+}
+
 .homePicture__title {
-  background: var(--white);
-  opacity: 0.7;
-  padding: 15% 5%;
+  opacity: 0.5;
+  padding: 10% 0%;
   font-size: 1rem;
+  line-height: 25px;
+  background: var(--white);
   -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);

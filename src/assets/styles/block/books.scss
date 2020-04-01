@@ -2,11 +2,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  //background: var(--white);
 
   @include desktop {
-    min-height: 70vh;
+    height: 85vh;
     align-items: center;
-    background: var(--white);
   }
 }
 .books__title {
