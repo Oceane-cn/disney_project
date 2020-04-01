@@ -1,0 +1,62 @@
+.informations {
+  display: none;
+  position: relative;
+  background: var(--white);
+
+  @include desktop {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.informations__image {
+  width: 60%;
+  margin-bottom: 5%;
+
+  @include tablet {
+    width: 50%;
+  }
+
+  @include desktop {
+    width: 30%;
+    margin-bottom: 0%;
+  }
+}
+.informations__description {
+  text-align: center;
+  padding: 5%;
+  line-height: 25px;
+
+  @include tablet {
+    font-size: 1.5rem;
+    line-height: 40px;
+  }
+}
+.informations__title {
+  font-size: 2rem;
+  font-family: var(--title_font);
+  margin-bottom: 5%;
+
+  @include tablet {
+    font-size: 4rem;
+  }
+}
+.close {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include desktop {
+    flex-direction: row;
+  }
+}
+.hidden {
+  display: none;
+}

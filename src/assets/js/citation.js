@@ -24,7 +24,6 @@ function change_citation() {
       "<p class='description__citation'>" + citations[count] + "</p>";
     count++;
   }
-  console.log(count);
 }
 
 setInterval(change_citation, 3000);

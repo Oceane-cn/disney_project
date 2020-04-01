@@ -2,7 +2,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  //background: var(--white);
 
   @include desktop {
     height: 85vh;

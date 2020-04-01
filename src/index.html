@@ -17,6 +17,10 @@
       href="https://fonts.googleapis.com/css?family=Stalemate&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
     <title>Disney's Books Animated Classics</title>
   </head>
   <body>
@@ -31,67 +35,235 @@
       </div>
     </header>
     <main>
-      <!-- <section >
-        <h1 class="homePicture__title">
-          Discover our new collection
-          <hr />
-          Disney's collectible animation classics is out !
-        </h1>
-      </section>-->
       <section class="books">
         <h2 class="books__title">
-          Enter a whole new world...
+          New covers for classics
         </h2>
         <div class="books__container">
-          <figure class="books__book">
+          <figure class="books__book" id="Mulan">
             <img src="assets/img/covers/Mulan.jpg" alt="Mulan" />
             <figcaption class="book__more">
               <p>Mulan</p>
             </figcaption>
           </figure>
-          <figure class="books__book">
+          <div class="book__informations Mulan informations">
+            <i class="las la-times close"></i>
+            <img
+              class="informations__image"
+              src="assets/img/covers/Mulan.jpg"
+              alt="Mulan"
+            />
+            <div class="informations__description">
+              <h3 class="informations__title">Mulan</h3>
+              <p>
+                In order to save her father’s life, a young woman named Mulan
+                disguises herself as a soldier and takes his place in the army.
+                Will Mulan bring shame to her family for what she has done? Or
+                will she help save China from the Huns?
+              </p>
+            </div>
+          </div>
+          <figure class="books__book" id="Aladdin">
             <img src="assets/img/covers/Aladdin.jpg" alt="Aladdin" />
             <figcaption class="book__more"><p>Aladdin</p></figcaption>
           </figure>
-          <figure class="books__book">
+          <div class="book__informations Aladdin informations">
+            <i class="las la-times close"></i>
+            <img
+              class="informations__image"
+              src="assets/img/covers/Aladdin.jpg"
+              alt="Aladdin"
+            />
+            <div class="informations__description">
+              <h3 class="informations__title">Aladdin</h3>
+              <p>
+                What do you get when you combine a magic lamp, a flying carpet,
+                a beautiful princess, and a young man who wants to be a prince?
+                Disney's Aladdin!
+              </p>
+            </div>
+          </div>
+          <figure class="books__book" id="Cinderella">
             <img src="assets/img/covers/Cinderella.jpg" alt="Cinderella" />
             <figcaption class="book__more"><p>Cinderella</p></figcaption>
           </figure>
-          <figure class="books__book">
+          <div class="book__informations Cinderella informations">
+            <i class="las la-times close"></i>
+            <img
+              class="informations__image"
+              src="assets/img/covers/Cinderella.jpg"
+              alt="Cinderella"
+            />
+            <div class="informations__description">
+              <h3 class="informations__title">Cinderella</h3>
+              <p>
+                When Cinderella's cruel stepmother forbids her from attending
+                the Royal Ball, she gets unexpected help from her mice friends
+                and her Fairy Godmother. Cinderella attends the ball as a
+                mysterious guest and dances with the prince. At the stroke of
+                the midnight, she loses one of her glass slippers and transforms
+                back into a maid. Will the prince ever find her now?
+              </p>
+            </div>
+          </div>
+          <figure class="books__book" id="Dumbo">
             <img src="assets/img/covers/Dumbo.jpg" alt="Dumbo" />
             <figcaption class="book__more"><p>Dumbo</p></figcaption>
           </figure>
-          <figure class="books__book">
+          <div class="book__informations Dumbo informations">
+            <i class="las la-times close"></i>
+            <img
+              class="informations__image"
+              src="assets/img/covers/Dumbo.jpg"
+              alt="Dumbo"
+            />
+            <div class="informations__description">
+              <h3 class="informations__title">Dumbo</h3>
+              <p>
+                A young circus elephant is born with comically large ears and
+                given the cruel nickname Dumbo. One day at a show, he is taunted
+                by a group of kids, inciting his mother into a rage that gets
+                her locked up. After Dumbo's ears cause an accident that injures
+                many of the other elephants, he is made to dress like a clown
+                and perform dangerous stunts. Everything changes when Dumbo
+                discovers that his enormous ears actually allow him to fly, and
+                he astounds everyone at the circus with his new talent.
+              </p>
+            </div>
+          </div>
+          <figure class="books__book" id="Frozen">
             <img src="assets/img/covers/Frozen.jpg" alt="Frozen" />
             <figcaption class="book__more"><p>Frozen</p></figcaption>
           </figure>
-          <figure class="books__book">
+          <div class="book__informations Frozen informations">
+            <i class="las la-times close"></i>
+            <img
+              class="informations__image"
+              src="assets/img/covers/Frozen.jpg"
+              alt="Frozen"
+            />
+            <div class="informations__description">
+              <h3 class="informations__title">Frozen</h3>
+              <p>
+                When a prophecy traps a kingdom in eternal winter, Anna, a young
+                dreamer, must team up with Kristoff, a daring mountain man, and
+                his reindeer on the grandest of journeys to find Anna's sister,
+                the Snow Queen Elsa, and put an end to her icy spell.
+                Encountering mystical trolls, a hilarious snowman named Olaf,
+                Everest-like extremes, and magic at every turn, Anna and
+                Kristoff battle the elements in a race to save the kingdom from
+                destruction.
+              </p>
+            </div>
+          </div>
+          <figure class="books__book" id="Lion_King">
             <img src="assets/img/covers/Lion_King.jpg" alt="Lion King" />
-            <figcaption class="book__more"><p>Lion King</p></figcaption>
+            <figcaption class="book__more"><p>The Lion King</p></figcaption>
           </figure>
-          <figure class="books__book">
-            <img src="assets/img/covers/Pinnochio.jpg" alt="Pinocchio" />
+          <div class="book__informations Lion_King informations">
+            <i class="las la-times close"></i>
+            <img
+              class="informations__image"
+              src="assets/img/covers/Lion_King.jpg"
+              alt="Lion King"
+            />
+            <div class="informations__description">
+              <h3 class="informations__title">The Lion King</h3>
+              <p>
+                A young lion prince is cast out of his pride by his cruel uncle,
+                who claims he killed his father. While the uncle rules with an
+                iron paw, the prince grows up beyond the Savannah, living by a
+                philosophy: No worries for the rest of your days. But when his
+                past comes to haunt him, the young prince must decide his fate:
+                Will he remain an outcast or face his demons and become what he
+                needs to be?
+              </p>
+            </div>
+          </div>
+          <figure class="books__book" id="Pinochio">
+            <img src="assets/img/covers/Pinochio.jpg" alt="Pinocchio" />
             <figcaption class="book__more"><p>Pinocchio</p></figcaption>
           </figure>
-          <figure class="books__book">
+          <div class="book__informations Pinochio informations">
+            <i class="las la-times close"></i>
+            <img
+              class="informations__image"
+              src="assets/img/covers/Pinochio.jpg"
+              alt="Pinochio"
+            />
+            <div class="informations__description">
+              <h3 class="informations__title">Pinochio</h3>
+              <p>
+                Geppetto is a lonely woodcarver who makes a boy puppet and
+                wishes, with all his might, that the puppet was alive. As
+                Geppetto sleeps, Pinocchio is given life by the Blue Fairy.
+                There's a catch, though. Pinocchio is alive, but he won't be a
+                real boy until he proves himself and to help him, Jiminy Cricket
+                is designated his Official Conscience. In the morning, Geppetto
+                is thrilled to see that his puppet is alive and does what any
+                father would do. He sends Pinocchio off to school - and into
+                trouble. Pinocchio must learn to be honest, and brave, before he
+                is allowed to become a real boy. Will he learn in time?
+              </p>
+            </div>
+          </div>
+          <figure class="books__book" id="Snow_White">
             <img src="assets/img/covers/Snow_white.jpg" alt="Snow White" />
             <figcaption class="book__more"><p>Snow White</p></figcaption>
           </figure>
-          <figure class="books__book">
+          <div class="book__informations Snow_White informations">
+            <i class="las la-times close"></i>
+            <img
+              class="informations__image"
+              src="assets/img/covers/Snow_White.jpg"
+              alt="Snow White"
+            />
+            <div class="informations__description">
+              <h3 class="informations__title">Snow White</h3>
+              <p>
+                The kindhearted princess Snow White charms every creature in the
+                kingdom except one—her jealous stepmother, the Queen. When the
+                Magic Mirror proclaims Snow White is the fairest one of all, she
+                must flee into the forest, where she befriends the lovable seven
+                dwarfs—Doc, Sneezy, Grumpy, Happy, Bashful, Sleepy and Dopey.
+                But when the Queen tricks Snow White with an enchanted apple,
+                only the magic of true love's kiss can save her!
+              </p>
+            </div>
+          </div>
+          <figure class="books__book" id="Little_mermaid">
             <img
               src="assets/img/covers/Little_mermaid.jpg"
               alt="Little mermaid"
             />
             <figcaption class="book__more">
-              <p>Little mermaid</p>
+              <p>The Little mermaid</p>
             </figcaption>
           </figure>
+          <div class="book__informations Little_mermaid informations">
+            <i class="las la-times close"></i>
+            <img
+              class="informations__image"
+              src="assets/img/covers/Little_Mermaid.jpg"
+              alt="Little Mermaid"
+            />
+            <div class="informations__description">
+              <h3 class="informations__title">The Little Mermaid</h3>
+              <p>
+                Ariel is tired of living under the seashe wants to be a human
+                and walk on the land. She gets her chance after making a deal
+                with an evil sea witch, but somethings fishy! Can Flounder,
+                Sebastian, and Scuttle help make the Little Mermaids dream come
+                true?
+              </p>
+            </div>
+          </div>
         </div>
       </section>
       <div class="container">
         <section class="description">
           <h2 class="description__title">
-            Lorem Ipsum
+            A whole new edition
           </h2>
           <div id="citation">
             <p class="description__citation">
@@ -100,17 +272,17 @@
             </p>
           </div>
           <p class="description__text">
-            Saepissime igitur mihi de amicitia cogitanti maxime illud
-            considerandum videri solet, utrum propter imbecillitatem atque
-            inopiam desiderata sit amicitia, ut dandis recipiendisque meritis
-            quod quisque minus per se ipse posset, id acciperet ab alio
-            vicissimque redderet, an esset hoc quidem proprium amicitiae, sed
-            antiquior et pulchrior et magis a natura ipsa profecta alia causa.
-            Amor enim, ex quo amicitia nominata est, princeps est ad
-            benevolentiam coniungendam. Nam utilitates quidem etiam ab iis
-            percipiuntur saepe qui simulatione amicitiae coluntur et observantur
-            temporis causa, in amicitia autem nihil fictum est, nihil simulatum
-            et, quidquid est, id est verum et voluntarium.
+            This beautiful hardback features premium cloth binding, a ribbon
+            marker to match the cover, foil stamping and illustrated endpapers,
+            making this the perfect gift for all those who have been enchanted
+            by the magic of Mulan and a book to be treasured by all. A family
+            favourite, Disney Mulan is one of the best-loved films of all time.
+            Relive the magic through this retelling of the classic animated
+            film, accompanied by paintings, story sketches and concept art from
+            the original Disney Studio artists. Also featured is a foreword by
+            Paul Briggs, a director at the Walt Disney Animation Studios. Turn
+            to the back of the book to learn more about the artists who worked
+            on this iconic animated film.
           </p>
         </section>
         <section class="pictures">
@@ -143,6 +315,7 @@
       </div>
       <p>© Copyright - All rights reserved</p>
     </footer>
-    <script src="assets/js/app.js"></script>
+    <script src="assets/js/citation.js"></script>
+    <script src="assets/js/show_book.js"></script>
   </body>
 </html>
