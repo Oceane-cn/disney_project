@@ -1,10 +1,17 @@
 .books__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 
   @include desktop {
     height: 85vh;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
 }
@@ -26,6 +33,8 @@
   width: 33%;
   position: relative;
   cursor: pointer;
+  -webkit-animation: fadeIn 1s forwards;
+  animation: fadeIn 1s forwards;
 
   @include desktop {
     width: 10%;
@@ -40,10 +49,14 @@
   @include flex_center;
   background: var(--white);
   opacity: 0;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
 
   &:hover {
     opacity: 0.7;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
   }
 
