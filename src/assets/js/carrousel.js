@@ -34,7 +34,7 @@ function slide() {
       }
       if (i === book_tab[1]) {
         figures[i].classList.add("books__biger");
-      } //Petit souci à régler
+      }
     }
   }
 }
