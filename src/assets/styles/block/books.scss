@@ -13,6 +13,7 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    justify-content: center;
   }
 }
 .books__title {
@@ -37,8 +38,15 @@
   animation: fadeIn 1s forwards;
 
   @include desktop {
-    width: 10%;
+    width: 20%;
   }
+}
+.books__biger {
+  width: 25%;
+  //margin: 0 5%;
+}
+.books__little {
+  width: 15%;
 }
 .book__more {
   position: absolute;
@@ -62,5 +70,17 @@
 
   @include tablet {
     font-size: 2rem;
+  }
+}
+
+#leftSlide,
+#rightSlide {
+  display: none;
+
+  @include desktop {
+    display: inline-block;
+    font-size: 3rem;
+    color: rgb(71, 42, 5);
+    cursor: pointer;
   }
 }

@@ -39,7 +39,8 @@
         <h2 class="books__title">
           New covers for old classics
         </h2>
-        <div class="books__container">
+        <div id="carrousel" class="books__container carrousel">
+          <i class="las la-angle-left books__arrow" id="leftSlide"></i>
           <figure class="books__book" id="Mulan">
             <img src="assets/img/covers/Mulan.jpg" alt="Mulan" />
             <figcaption class="book__more">
@@ -258,6 +259,7 @@
               </p>
             </div>
           </div>
+          <i class="las la-angle-right books__arrow" id="rightSlide"></i>
         </div>
       </section>
       <div class="container">
@@ -316,6 +318,7 @@
       <p>© Copyright - All rights reserved</p>
     </footer>
     <!--<script src="assets/js/background.js"></script>-->
+    <script src="assets/js/carrousel.js"></script>
     <script src="assets/js/show_book.js"></script>
     <script src="assets/js/citation.js"></script>
   </body>
