@@ -87,7 +87,7 @@
   @include desktop {
     display: inline-block;
     font-size: 3rem;
-    color: rgb(71, 42, 5);
+    color: var(--item);
     cursor: pointer;
   }
 }
