@@ -6,3 +6,21 @@
     opacity: 1;
   }
 }
+@keyframes bg {
+  0% {
+    background: url("../../assets/img/cover_1.jpg");
+    background-size: 100% 100%;
+  }
+  30% {
+    background: url("../../assets/img/cover_2.jpg");
+    background-size: 100% 100%;
+  }
+  66% {
+    background: url("../../assets/img/cover_3.jpg");
+    background-size: 100% 100%;
+  }
+  100% {
+    background: url("../../assets/img/cover_4.jpg");
+    background-size: 100% 100%;
+  }
+}

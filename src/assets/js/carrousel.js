@@ -85,7 +85,6 @@ function show_more(e) {
   let book = e.target.closest(".books__book");
   let id = book.id;
   active = 1;
-  console.log(active);
 
   for (let j = 0; j < infos.length; j++) {
     if (infos[j].classList.contains(id)) {

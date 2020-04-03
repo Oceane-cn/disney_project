@@ -14,9 +14,11 @@
   font-size: 1.5rem;
   color: black;
   padding: 5%;
-  -webkit-animation: fadeIn 2s forwards;
-  animation: fadeIn 2s forwards;
-  background: url("../../assets/img/cover_1.jpg");
+  /*-webkit-animation: fadeIn 2s forwards;
+  animation: fadeIn 2s forwards;*/
+  animation: bg 25s forwards;
+  animation-iteration-count: infinite;
+  //background: url("../../assets/img/cover_1.jpg");
   background-size: 100% 100%;
 
   @include desktop {
