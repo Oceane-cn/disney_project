@@ -8,7 +8,7 @@ var right = document.getElementById("rightSlide");
 var max = figures.length;
 var book_tab = [0, 1, 2];
 
-//Variables pour montrer et cacher les informations des livres
+//Variables pour les informations des livres
 
 var more = document.getElementsByClassName("book__more");
 var infos = document.getElementsByClassName("book__informations");
@@ -16,15 +16,18 @@ var books_carrousel = document.getElementsByClassName("books__book");
 var close = document.getElementsByClassName("close");
 var active = 0;
 
+//Déclenchement au chargement de la page
 WindowSize();
 
+//Déclenchement de la fonction à chaque changement de taille de la fenêtre
+window.onresize = WindowSize;
+
+//Affichage du carrousel en desktop
 function WindowSize() {
-  console.log(active);
   var larg = document.body.clientWidth;
   if (larg >= desktop && active != 1) {
     slide();
   } else if (active != 1) {
-    console.log("coucou");
     for (let i = 0; i < max; i++) {
       figures[i].classList.remove("hidden");
       if (figures[i].classList.contains("books__biger")) {
@@ -34,6 +37,7 @@ function WindowSize() {
   }
 }
 
+//Défilement des livres dans le carrousel
 function slide() {
   for (let i = 0; i < max; i++) {
     figures[i].classList.add("hidden");
@@ -51,6 +55,7 @@ function slide() {
   }
 }
 
+//Changement des valeurs du tableau book_tab lors d'un click flèche gauche
 function booksToShowLeft() {
   for (let i = 0; i < book_tab.length; i++) {
     if (book_tab[i] <= 0) {
@@ -63,6 +68,7 @@ function booksToShowLeft() {
   slide();
 }
 
+//Changement des valeurs du tableau book_tab lors d'un click flèche droite
 function booksToShowRight() {
   for (let i = 0; i < book_tab.length; i++) {
     if (book_tab[i] >= figures.length - 1) {
@@ -74,13 +80,18 @@ function booksToShowRight() {
   slide();
 }
 
+//Event listener des flèches du carrousel
 left.addEventListener("click", booksToShowLeft);
 right.addEventListener("click", booksToShowRight);
 
-window.onresize = WindowSize;
+//Cacher les livres
+function hide_books() {
+  for (let k = 0; k < books_carrousel.length; k++) {
+    books_carrousel[k].classList.add("hidden");
+  }
+}
 
-//Fonctions pour montrer et cacher les informations des livres
-
+//Affichage les informations d'un livre
 function show_more(e) {
   let book = e.target.closest(".books__book");
   let id = book.id;
@@ -97,15 +108,7 @@ function show_more(e) {
   right.style.display = "none";
 }
 
-function close_book(e) {
-  let current_book = e.target.closest(".informations");
-  current_book.classList.remove("active");
-
-  show_books();
-
-  active = 0;
-}
-
+//Affichage de tous les livres => carrousel si desktop, miniatures si tablette ou mobile
 function show_books() {
   var larg = document.body.clientWidth;
   if (larg >= desktop) {
@@ -119,10 +122,14 @@ function show_books() {
   }
 }
 
-function hide_books() {
-  for (let k = 0; k < books_carrousel.length; k++) {
-    books_carrousel[k].classList.add("hidden");
-  }
+//Fermeture des informations d'un livre
+function close_book(e) {
+  let current_book = e.target.closest(".informations");
+  current_book.classList.remove("active");
+
+  show_books();
+
+  active = 0;
 }
 
 //Event listener pour affichage des informations d'un livre

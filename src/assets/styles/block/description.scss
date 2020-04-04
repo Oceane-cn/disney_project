@@ -24,12 +24,15 @@
   }
 }
 .description__title {
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-family: var(--title_font);
   padding-bottom: 5%;
 
   @include tablet {
     font-size: 3rem;
+  }
+  @include desktop {
+    font-size: 2rem;
   }
 }
 .description__text {

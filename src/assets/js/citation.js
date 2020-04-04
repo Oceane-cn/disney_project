@@ -1,3 +1,4 @@
+//Variables
 var citation = document.getElementById("citation");
 var citations = [
   "”Remember, you’re the one who can fill the world with sunshine” - Snow White",
@@ -12,6 +13,7 @@ var citations = [
 ];
 var count = 1;
 
+//Affichage d'une nouvelle citation
 function change_citation() {
   if (count >= citations.length) {
     count = 0;
@@ -26,4 +28,5 @@ function change_citation() {
   }
 }
 
+//Timer pour changer les citations
 setInterval(change_citation, 3000);

@@ -5,11 +5,9 @@ footer {
   padding: 10% 0%;
 
   > p {
-    margin-top: 10%;
     font-size: 0.7rem;
 
     @include desktop {
-      margin-top: 2%;
       font-size: 0.9rem;
     }
   }

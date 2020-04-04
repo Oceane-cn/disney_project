@@ -19,7 +19,7 @@
 }
 .books__title {
   font-family: var(--title_font);
-  font-size: 2rem;
+  font-size: 1.7rem;
   text-align: center;
   padding: 10% 0%;
 
@@ -29,6 +29,7 @@
 
   @include desktop {
     padding: 3% 0%;
+    font-size: 2rem;
   }
 }
 .books__book {
